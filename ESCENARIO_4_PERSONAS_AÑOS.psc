@@ -1,18 +1,15 @@
-Algoritmo ESCENARIO_4_AÑOS
+Algoritmo ESCENARIO_4_PERSONAS_AÑOS
 	
 		Definir n, m, i, j, anio, nac, falle, personasVivas, edadMin, edadMax Como Entero
 		Definir listaNacimientos, listaFallecimientos, listaAnios Como Entero
 		Definir censo Como Caracter
 		
-		// Leer la cantidad de personas en el censo
 		Escribir "Ingrese la cantidad de personas en el censo: "
 		Leer n
-		
-		// Inicializar listas
+
 		Dimension listaNacimientos[n]
 		Dimension listaFallecimientos[n]
 		
-		// Leer los datos de nacimiento y fallecimiento
 		Para i <- 1 Hasta n Con Paso 1 Hacer
 			Escribir "Ingrese el año de nacimiento de la persona ", i, ": "
 			Leer nac
@@ -23,21 +20,18 @@ Algoritmo ESCENARIO_4_AÑOS
 			listaFallecimientos[i] <- falle
 		FinPara
 		
-		// Leer la cantidad de años a consultar
 		Escribir "Ingrese la cantidad de años a consultar: "
 		Leer m
 		
-		// Inicializar lista de años a consultar
 		Dimension listaAnios[m]
 		
-		// Leer los años a consultar
+		
 		Para i <- 1 Hasta m Con Paso 1 Hacer
 			Escribir "Ingrese el año a consultar ", i, ": "
 			Leer anio
 			listaAnios[i] <- anio
 		FinPara
 		
-		// Procesar cada año a consultar
 		Para i <- 1 Hasta m Con Paso 1 Hacer
 			anio <- listaAnios[i]
 			personasVivas <- 0
